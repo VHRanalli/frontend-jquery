@@ -2,9 +2,45 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Uso de JQuery</title>
+
+	<script type="text/javascript" src="../_javascript/jquery.js"></script>
+
+	<script type="text/javascript">
+		
+		/* 
+		Para usar a biblioteca de JQuery e necessario usar um caracter especial para fazer chamada:($) ou JQuery
+		*/
+		$(document).ready(function(){
+			$('#principal').append('<p>texto novo</p>');
+			$('#primeiro').click(function(){
+				$('div').append('<h2>Papai Ramos!</h2>');
+			});
+		});
+
+	</script>
 </head>
 <body>
 	
+
+	<header>
+		<h1>Pagina com JQuery</h1>
+	</header>
+		<main>
+			<section id="principal">
+				<div>
+					<button id="primeiro">primeiro</button><br>
+					<div>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque ea ducimus recusandae animi quibusdam, qui alias, nihil consectetur eaque voluptates earum porro suscipit culpa nemo sit fugit neque quo!</div>
+					<div>Pariatur, ab. Dolorem vitae neque natus voluptas qui unde, eveniet doloremque tempora, maiores excepturi iure, suscipit voluptates exercitationem! Earum mollitia laboriosam dolore et accusamus error odit sed inventore, quo placeat.</div>
+					<div>Veniam dolorum, perspiciatis alias inventore tenetur quis aliquam repudiandae. Aut, magni, non. Earum commodi delectus, ut quam omnis eligendi consectetur praesentium doloremque ab culpa atque perspiciatis maiores iusto tempora voluptate.</div>
+				</div>
+				<div>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eius fugit ipsa fugiat a qui cupiditate dicta sit laudantium non? Ipsum, animi, modi. Ab voluptas, nesciunt enim animi reprehenderit modi.</div>
+					<div>Blanditiis qui eveniet quod voluptas suscipit nobis, dicta explicabo sed minus nesciunt itaque ipsam laudantium fugiat, voluptatem ipsum sint numquam commodi provident consectetur ducimus adipisci. Sequi molestiae impedit nulla, debitis.</div>
+					<div>Delectus ex nemo quod quasi reprehenderit sequi, officiis iusto voluptas officia recusandae dolorem ab sint laborum, rerum quisquam quis architecto corporis labore unde eaque mollitia necessitatibus totam sunt. Reiciendis, corrupti?</div>
+				</div>
+			</section>
+		</main>
+
 </body>
 </html>
